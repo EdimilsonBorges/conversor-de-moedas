@@ -1,8 +1,8 @@
-package service;
+package com.edimilsonborges.conversormoedas.service;
 
-import Exceptions.ErrorApiKeyUrlException;
-import coin.Coin;
-import coinOmdb.CoinOmdb;
+import com.edimilsonborges.conversormoedas.exceptions.ErrorApiKeyUrlException;
+import com.edimilsonborges.conversormoedas.model.coin.Coin;
+import com.edimilsonborges.conversormoedas.model.coin.CoinOmdb;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -37,7 +37,7 @@ public class ApiService {
             return "O valor de " + value + " [" + ofCurrency + "] " + "corresponde ao valor final de " + finalValue + " [" + toCurrency + "]";
         } catch (NullPointerException e) {
             throw new ErrorApiKeyUrlException("Erro na api, verifique se você inseriu sua apikey corretamente.");
-        }catch (ConnectException | JsonSyntaxException e) {
+        } catch (ConnectException | JsonSyntaxException e) {
             throw new ErrorApiKeyUrlException("Erro na api, verifique se você inseriu a Uri da Api corretamente.");
         } catch (Exception e) {
             throw new RuntimeException(e);

@@ -1,4 +1,4 @@
-package Exceptions;
+package com.edimilsonborges.conversormoedas.exceptions;
 
 public class ErrorApiKeyUrlException extends RuntimeException{
     private String mensagem;

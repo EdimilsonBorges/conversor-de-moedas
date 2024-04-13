@@ -1,6 +1,4 @@
-package coin;
-
-import coinOmdb.CoinOmdb;
+package com.edimilsonborges.conversormoedas.model.coin;
 
 import java.util.Map;
 

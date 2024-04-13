@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a55727b-7511-41d1-9f83-2bcc5c56c6ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/ErrorApiKeyUrlException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/exceptions/ErrorApiKeyUrlException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coin/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/model/coin/Coin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coinOmdb/CoinOmdb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/model/coin/CoinOmdb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/ApiService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +55,7 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="com.edimilsonborges.conversormoedas.Main" />
       <module name="conversor-de-moedas" />
       <method v="2">
         <option name="Make" enabled="true" />
