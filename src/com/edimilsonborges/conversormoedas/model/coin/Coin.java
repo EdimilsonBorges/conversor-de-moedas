@@ -3,9 +3,9 @@ package com.edimilsonborges.conversormoedas.model.coin;
 import java.util.Map;
 
 public class Coin {
-    private String result;
-    private String baseCode;
-    private Map<String, Double> conversionRates;
+    private final String result;
+    private final String baseCode;
+    private final Map<String, Double> conversionRates;
 
     public Coin(CoinOmdb coinOmdb) {
         this.result = coinOmdb.result();

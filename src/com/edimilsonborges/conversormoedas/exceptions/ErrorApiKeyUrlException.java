@@ -1,13 +1,13 @@
 package com.edimilsonborges.conversormoedas.exceptions;
 
 public class ErrorApiKeyUrlException extends RuntimeException{
-    private String mensagem;
-    public ErrorApiKeyUrlException(String mensagem){
-     this.mensagem = mensagem;
+    private final String message;
+    public ErrorApiKeyUrlException(String message){
+     this.message = message;
     }
 
     @Override
     public String getMessage() {
-        return this.mensagem;
+        return this.message;
     }
 }
