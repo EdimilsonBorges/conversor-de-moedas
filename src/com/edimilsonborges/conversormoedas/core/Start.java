@@ -2,14 +2,21 @@ package com.edimilsonborges.conversormoedas.core;
 
 import com.edimilsonborges.conversormoedas.menu.Menu;
 import com.edimilsonborges.conversormoedas.service.ApiService;
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Start {
 
     private final Map<Integer, String> currency = new HashMap<>();
-    ApiService apiService = new ApiService();
+    private final Map<String, String> historyList = new HashMap<>();
+    private final ApiService apiService = new ApiService();
 
     public Start() {
         addCurrency();
@@ -17,7 +24,6 @@ public class Start {
     }
 
     private void start() {
-        Map<String, String> hitoryList = new HashMap<>();
 
         while (true) {
             new Menu();
@@ -27,6 +33,7 @@ public class Start {
                 int selected = scanner.nextInt();
 
                 if (selected == 11) {
+                    saveHistory();
                     System.out.println("Você saiu!");
                     break;
                 } else if (selected > 0 && selected <= currency.size()) {
@@ -35,7 +42,7 @@ public class Start {
                     String input = scan.nextLine().replace(',', '.');
                     double value = Double.parseDouble(input);
                     String currencySelected = currency.get(selected);
-                    System.out.println(selection(currencySelected, value, hitoryList));
+                    System.out.println(selection(currencySelected, value));
                     pause("Pressione enter para continuar");
                 } else {
                     pause("Opção inválida, selecione entre 1 e " + (currency.size() + 1) + ", pressione enter para repetir!");
@@ -46,11 +53,27 @@ public class Start {
         }
     }
 
-    private String selection(String selected, double value, Map<String, String> historyList) {
+    private void saveHistory() {
+        Gson gson = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+                .setPrettyPrinting()
+                .create();
+        try {
+            FileWriter fileWriter = new FileWriter("history.json");
+            fileWriter.write(gson.toJson(historyList));
+            fileWriter.close();
+            System.out.println("Histórico salvo com sucesso!");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private String selection(String selected, double value) {
         String[] currencys = selected.split("-");
         String ofCurrency = currencys[0];
         String toCurrency = currencys[1];
         String result = apiService.toConvert(ofCurrency, toCurrency, value);
+        addHistory(result);
 
         return """
                 *******************************************************************
@@ -75,10 +98,17 @@ public class Start {
         currency.put(10, "BRL-ARS");
     }
 
+    private void addHistory(String result) {
+        LocalDateTime dateHourNow = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd|HH:mm:ss");
+        String timeFormatted = dateHourNow.format(formatter);
+        this.historyList.put(timeFormatted, result);
+    }
+
     private void pause(String message) {
         System.out.println(message);
         try {
-            final int read = System.in.read();
+            System.in.read();
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }

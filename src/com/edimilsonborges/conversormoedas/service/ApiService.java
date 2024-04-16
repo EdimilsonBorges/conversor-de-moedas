@@ -47,7 +47,7 @@ public class ApiService {
         }
     }
 
-    private String formatValue(double value){
+    private String formatValue(double value) {
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
         return decimalFormat.format(value);
     }
