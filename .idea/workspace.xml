@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a55727b-7511-41d1-9f83-2bcc5c56c6ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/core/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/core/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conversor-de-moedas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/conversor-de-moedas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/ApiService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,20 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Windows 10/Downloads/gson-2.10.1.jar&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Desafio/conversor-de-moedas/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Maven.Unknown [validate].executor": "Run",
+    "Maven.conversormoedas [clean].executor": "Run",
+    "Maven.conversormoedas [install].executor": "Run",
+    "Maven.conversormoedas [validate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Windows 10/Downloads/gson-2.10.1.jar",
+    "onboarding.tips.debug.path": "C:/Desafio/conversor-de-moedas/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.edimilsonborges.conversormoedas.Main" />
