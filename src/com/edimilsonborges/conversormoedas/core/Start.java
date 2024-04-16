@@ -26,26 +26,22 @@ public class Start {
                 Scanner scanner = new Scanner(System.in);
                 int selected = scanner.nextInt();
 
-                if (selected == 0) {
+                if (selected == 11) {
                     System.out.println("Você saiu!");
                     break;
                 } else if (selected > 0 && selected <= currency.size()) {
                     System.out.println("Digite o valor que deseja converter");
-                    double value = scanner.nextDouble();
+                    Scanner scan = new Scanner(System.in);
+                    String input = scan.nextLine().replace(',', '.');
+                    double value = Double.parseDouble(input);
                     String currencySelected = currency.get(selected);
                     System.out.println(selection(currencySelected, value, hitoryList));
-                    System.out.println("Digite qualquer tecla para continuar");
-                    System.in.read();
+                    pause("Pressione enter para continuar");
                 } else {
-                    System.out.println("Opção inválida");
+                    pause("Opção inválida, selecione entre 1 e " + (currency.size() + 1) + ", pressione enter para repetir!");
                 }
-            } catch (RuntimeException | IOException e) {
-                System.out.println("Opção inválida, digite qualquer tecla para repetir!");
-                try {
-                    System.in.read();
-                } catch (IOException ex) {
-                    throw new RuntimeException(ex);
-                }
+            } catch (InputMismatchException | NumberFormatException e) {
+                pause("Opção inválida, pressione enter para repetir!");
             }
         }
     }
@@ -77,5 +73,14 @@ public class Start {
         currency.put(8, "BRL-EUR");
         currency.put(9, "ARS-BRL");
         currency.put(10, "BRL-ARS");
+    }
+
+    private void pause(String message) {
+        System.out.println(message);
+        try {
+            final int read = System.in.read();
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
     }
 }

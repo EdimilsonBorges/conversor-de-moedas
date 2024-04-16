@@ -13,12 +13,13 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.text.DecimalFormat;
 
 public class ApiService {
     public String toConvert(String ofCurrency, String toCurrency, double value) {
 
-        final String apiKey = "965888a8bce8785326e328bb"; // coloque sua apikey aqui
-        URI uri = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/" + ofCurrency);
+        final String apiKey = ""; // coloque sua apikey aqui
+        final URI uri = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/" + ofCurrency);
 
         try (HttpClient client = HttpClient.newHttpClient()) {
             HttpRequest request = HttpRequest.newBuilder()
@@ -32,9 +33,11 @@ public class ApiService {
                     .create();
             CoinOmdb coinOmdb = gson.fromJson(json, CoinOmdb.class);
             Coin coin = new Coin(coinOmdb);
-            double finalValue = coin.getConversionRates().get(toCurrency) * value;
+            double coinValue = coin.getConversionRates().get(toCurrency) * value;
+            String coinValueFinal = formatValue(coinValue);
+            String valueFinal = formatValue(value);
 
-            return "O valor de " + value + " [" + ofCurrency + "] " + "corresponde ao valor final de " + finalValue + " [" + toCurrency + "]";
+            return "O valor de " + valueFinal + " [" + ofCurrency + "] " + "corresponde ao valor final de " + coinValueFinal + " [" + toCurrency + "]";
         } catch (NullPointerException e) {
             throw new ErrorApiKeyUrlException("Erro na api, verifique se você inseriu sua apikey corretamente.");
         } catch (ConnectException | JsonSyntaxException e) {
@@ -42,6 +45,11 @@ public class ApiService {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private String formatValue(double value){
+        DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
+        return decimalFormat.format(value);
     }
 }
 

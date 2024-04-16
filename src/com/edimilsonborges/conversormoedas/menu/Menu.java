@@ -17,7 +17,7 @@ public class Menu {
                 *    8) Real Brasileiro =>> Euro            *
                 *    9) Peso Argentino =>> Real Brasileiro  *
                 *    10) Real Brasileiro =>> Peso Argentino *
-                *    0) Sair                                *
+                *    11) Sair                                *
                 *********************************************
                 Escolha uma opção válida:""";
         System.out.println(menu);
