@@ -16,7 +16,6 @@ O conversor de moedas é um projeto desenvolvido como parte do desafio proposto 
 ## 📋 Pré-requisitos
  - Acesso à internet
  - Java 21 Instalado na máquina
- - IntelliJ IDEA
 ## 🎮 Como Usar
 - Faça download do projeto
 - Dentro da pasta raíz do projeto você encontra os executáveis para Windows e para Linux
