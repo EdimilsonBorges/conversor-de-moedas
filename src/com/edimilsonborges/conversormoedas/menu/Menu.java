@@ -17,7 +17,8 @@ public class Menu {
                 *    8) Real Brasileiro =>> Euro            *
                 *    9) Peso Argentino =>> Real Brasileiro  *
                 *    10) Real Brasileiro =>> Peso Argentino *
-                *    11) Sair                                *
+                *    11) Ver historico de consultas         *
+                *    12) Sair                               *
                 *********************************************
                 Escolha uma opção válida:""";
         System.out.println(menu);
