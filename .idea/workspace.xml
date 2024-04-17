@@ -12,13 +12,8 @@
     <list default="true" id="1a55727b-7511-41d1-9f83-2bcc5c56c6ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/core/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/core/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/menu/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/ApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/HistoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/core/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/core/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/service/HistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/service/HistoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/conversormoedas-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -70,16 +70,22 @@ public class Start {
     }
 
     private void addCurrency() {
-        currency.put(1, "USD-ARS");
-        currency.put(2, "ARS-USD");
-        currency.put(3, "USD-BRL");
-        currency.put(4, "BRL-USD");
-        currency.put(5, "USD-COP");
-        currency.put(6, "COP-USD");
-        currency.put(7, "EUR-BRL");
-        currency.put(8, "BRL-EUR");
-        currency.put(9, "ARS-BRL");
-        currency.put(10, "BRL-ARS");
+        currency.put(1, "USD-BRL");
+        currency.put(2, "BRL-USD");
+        currency.put(3, "EUR-BRL");
+        currency.put(4, "BRL-EUR");
+        currency.put(5, "ARS-BRL");
+        currency.put(6, "BRL-ARS");
+        currency.put(7, "CNY-BRL");
+        currency.put(8, "BRL-CNY");
+        currency.put(9, "EGP-BRL");
+        currency.put(10, "BRL-EGP");
+        currency.put(11, "JPY-BRL");
+        currency.put(12, "BRL-JPY");
+        currency.put(13, "USD-ARS");
+        currency.put(14, "ARS-USD");
+        currency.put(15, "USD-COP");
+        currency.put(16, "COP-USD");
     }
 
     private void pause(String message) {
