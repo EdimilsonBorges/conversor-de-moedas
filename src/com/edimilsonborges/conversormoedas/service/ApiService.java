@@ -18,7 +18,7 @@ import java.text.DecimalFormat;
 public class ApiService {
     public String toConvert(String ofCurrency, String toCurrency, double value) {
 
-        final String apiKey = ""; // coloque sua apikey aqui
+        final String apiKey = "965888a8bce8785326e328bb"; // coloque sua apikey aqui
         final URI uri = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/" + ofCurrency);
 
         try (HttpClient client = HttpClient.newHttpClient()) {

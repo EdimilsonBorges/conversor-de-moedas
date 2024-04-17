@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="conversor-de-moedas:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -7,10 +12,13 @@
     <list default="true" id="1a55727b-7511-41d1-9f83-2bcc5c56c6ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/core/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/core/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/menu/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/ApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edimilsonborges/conversormoedas/service/HistoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/core/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/core/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/service/HistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edimilsonborges/conversormoedas/service/HistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/conversormoedas-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +52,7 @@
     "Application.Main.executor": "Run",
     "Maven.Unknown [validate].executor": "Run",
     "Maven.conversormoedas [clean].executor": "Run",
+    "Maven.conversormoedas [compile].executor": "Run",
     "Maven.conversormoedas [install].executor": "Run",
     "Maven.conversormoedas [validate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -52,12 +61,17 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Windows 10/Downloads/gson-2.10.1.jar",
     "onboarding.tips.debug.path": "C:/Desafio/conversor-de-moedas/src/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Desafio\conversor-de-moedas\target\classes" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.edimilsonborges.conversormoedas.Main" />

@@ -16,7 +16,6 @@ public class Start {
     public Start() {
         apiService = new ApiService();
         historyService = new HistoryService();
-        historyService.loadHistory();
         addCurrency();
         start();
     }

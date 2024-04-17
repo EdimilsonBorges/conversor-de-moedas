@@ -13,6 +13,10 @@ import java.util.Map;
 public class HistoryService {
     private Map<String, String> historyList = new HashMap<>();
 
+    public HistoryService(){
+        loadHistory();
+    }
+
     public void addHistory(String result) {
         LocalDateTime dateHourNow = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd|HH:mm:ss");
@@ -36,11 +40,11 @@ public class HistoryService {
         }
     }
 
-    public boolean loadHistory(){
+    private boolean loadHistory(){
         try (Reader reader = new FileReader("history.json")) {
             Gson gson = new GsonBuilder().create();
 
-            Map<String, String> dataHistory  = gson.fromJson(reader, Map.class);
+            Map<String, String> dataHistory = gson.fromJson(reader, Map.class);
 
            if(dataHistory != null){
                 historyList = dataHistory;
@@ -69,7 +73,7 @@ public class HistoryService {
             String date = dateTime[0];
             String time = dateTime[1];
             String value = data.getValue();
-            System.out.println( "Dia "+date+" às "+time +" => "+ value);
+            System.out.println( "Dia " + date + " às " + time + " => "+ value);
         }
         System.out.println("***************************************************************************************");
     }

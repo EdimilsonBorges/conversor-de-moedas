@@ -3,5 +3,6 @@ com\edimilsonborges\conversormoedas\Main.class
 com\edimilsonborges\conversormoedas\service\ApiService.class
 com\edimilsonborges\conversormoedas\exceptions\ErrorApiKeyUrlException.class
 com\edimilsonborges\conversormoedas\menu\Menu.class
+com\edimilsonborges\conversormoedas\service\HistoryService.class
 com\edimilsonborges\conversormoedas\model\coin\Coin.class
 com\edimilsonborges\conversormoedas\model\coin\CoinOmdb.class
