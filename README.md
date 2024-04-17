@@ -18,7 +18,7 @@ O conversor de moedas é um projeto desenvolvido como parte do desafio proposto 
  - Java 21 Instalado na máquina
  - IntelliJ IDEA
 ## 🎮 Como Usar
-- Faça donload do projeto e abra pela IDE IntelliJ IDEA, ou pela sua IDE de preferência
+- Faça download do projeto e abra pela IDE IntelliJ IDEA, ou pela sua IDE de preferência
 - Você precisará criar uma conta no [Exchangerate Api](https://www.exchangerate-api.com/) para gerar a chave apikey.
 - Depois inserir a chave gerada na constante apiKey que fica na classe ApiService.java do pacote service do projeto
 - Agora rode na IDE IntelliJ IDEA
