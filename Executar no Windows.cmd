@@ -1,1 +1,1 @@
-java -jar conversor-de-moedas.jar
+java -Dfile.encoding=UTF-8 -jar conversor-de-moedas.jar
