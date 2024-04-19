@@ -30,6 +30,7 @@ O conversor de moedas é um projeto desenvolvido como parte do desafio proposto 
 - [Gson](https://github.com/google/gson) - Biblioteca
 ## ⛏️ Recursos
 - Converte vários tipos de moedas
+- Os valores são dinâmicos, os valores nunca fica desatualizados 
 - Histórico das consultas
 ## ✒️ Autor
 **Desenvolvedor Full stack** - [Edimilson Borges](https://github.com/EdimilsonBorges)

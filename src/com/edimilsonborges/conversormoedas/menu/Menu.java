@@ -23,7 +23,7 @@ public class Menu {
                 *    14) Peso Argentino =>> Dólar                *
                 *    15) Dólar =>> Peso Colombiano               *
                 *    16) Peso Colombiano =>> Dólar               *
-                *    17) Ver historico de consultas              *
+                *    17) Ver histórico de consultas              *
                 *    18) Sair                                    *
                 **************************************************
                 Escolha uma opção válida:""";
